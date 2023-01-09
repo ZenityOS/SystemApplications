@@ -1,0 +1,6 @@
+[submodule "AuraPad"]
+	path = AuraPad
+	url = https://github.com/jdev082/AuraPad
+[submodule "NewProjectCLI"]
+	path = NewProjectCLI
+	url = https://github.com/jdev082/NewProjectCLI
