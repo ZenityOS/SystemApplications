@@ -1,1 +1,1 @@
-export packages=('NewProjectCLI')
+export PACKAGES=('NewProjectCLI')
