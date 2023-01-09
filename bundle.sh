@@ -1,8 +1,13 @@
-#!/bin/sh
+#!/bin/bash
+bash packages.sh
 
 rm -rf Packages
 mkdir -p Packages
-cp -r */deb/build.deb ./Packages/"${RANDOM}.deb"
+
+for t in ${packages[@]}; do
+	cp -r "$(t)/deb/build.deb Packages/$(t)"
+done
+
 git add -A
 git commit -m "script: bundle packages"
 git push
