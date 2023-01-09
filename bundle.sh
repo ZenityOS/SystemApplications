@@ -5,7 +5,7 @@ rm -rf Packages
 mkdir -p Packages
 
 for t in ${packages[@]}; do
-	cp -r "$(t)/deb/build.deb Packages/$(t)"
+	cp -r $t/deb/build.deb Packages/$(t).deb
 done
 
 git add -A
